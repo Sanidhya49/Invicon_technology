@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Bridge - Invicon Technology</title>
+    <link rel="stylesheet" href="api_bridge.css">
+</head>
+
+<script language="JavaScript" type="text/javascript">
+
+    function curTime()
+    {
+    var now=new Date()
+    var hrs=now.getHours()
+    var min=now.getMinutes()
+    var sec=now.getSeconds()
+    var don="AM"
+    if (hrs>=12){ don="PM" }
+    if (hrs>12) { hrs-=12 }
+    if (hrs==0) { hrs=12 }
+    if (hrs<10) { hrs="0"+hrs }
+    if (min<10) { min="0"+min }
+    if (sec<10) { sec="0"+sec }
+    if(navigator.appName.indexOf("Microsoft Internet Explorer") != -1)
+    {
+        clock.innerHTML=hrs+":"+min+":"+sec+" "+don
+    }
+    else
+    {
+        document.getElementById("clock").textContent=hrs+":"+min+":"+sec+" "+don
+    }
+    setTimeout("curTime()",1000)
+    
+    }
+    </script>
+     <style type="text/css">
+    .IE8Fix
+    {
+        text-align:left;
+        z-index: 100;
+    }
+    .imstyle			
+     {			
+         float:left;			
+         padding:0px;			    
+         margin:0px;			
+         border:0px;			
+     }	
+    </style>
+    
+    <table class="table-responsive" style="width:100%; height:20%; margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;padding-bottom:0px; padding-top:0px; border-spacing:0px; vertical-align:top;"  cellpadding ="0" cellspacing = "0" border="0">
+            <tr id="HeaderControl_C_ctl00_imageheader" style="width:100%; margin:0 ; ">
+                            <td colspan="3" style="width:100%; border:0;  margin:0 ;">
+                    
+                </td>
+                        </tr>
+                        
+            <tr id="HeaderControl_C_ctl00_tr_HeaderBackImage" valign="top" style="color: hotpink;">
+                            <td id="HeaderControl_C_ctl00_Header" style="width:100%; height:100%" valign="top" class="IE8Fix"><html>
+      <header id="header" class="text-center">
+        <a href="/resource/home.aspx" title="Home">
+          <img src="https://i.pinimg.com/736x/f6/0c/90/f60c90877c2dd18d2686916efe4f5a59.jpg" alt="Logo" class="img-fluid wow zoomIn">
+        </a>
+      </header>
+      <script>
+        AOS.init();
+      </script>
+    </html></td>
+                        </tr>
+                        
+          </table>
+    
+                    </div></td>
+                    <td class="rdRight">&nbsp;</td>
+                </tr>
+                <tr class="rdBottom">
+                    <td class="rdLeft">&nbsp;</td>
+                    <td class="rdCenter">&nbsp;</td>
+                    <td class="rdRight">&nbsp;</td>
+                </tr>
+            </table>
+            <input id="HeaderControl_ClientState" name="HeaderControl_ClientState" type="hidden" />
+        </div><div id="MenuControl" class="RadDock RadDock_Default col-md-9" style="height:82px;float:Right;">
+            <table class="rdTable">
+                <tr class="rdTop rdNone">
+                    <td class="rdLeft">&nbsp;</td>
+                    <td class="rdCenter"></td>
+                    <td class="rdRight">&nbsp;</td>
+                </tr>
+                <tr class="rdMiddle">
+                    <td class="rdLeft">&nbsp;</td>
+                    <td class="rdCenter"><div id="MenuControl_C" class="rdContent" style="overflow:hidden;border-style:none;">
+                        
+    
+     <nav class="navbar navbar-expand-md bg-light " style="z-index:155555555555;" >
+     <div class="container-fluid" style="z-index:1010192;">
+                        <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="z-index:1010192;">
+               
+                 
+                        <ul class="navbar-nav nav-fill" id="submenu1">
+                            <li class="nav-item"><a href="http://127.0.0.1:5501/index.html" class="nav-link" title="Home">Home</a></li><li class="nav-item"><a href="http://127.0.0.1:5501/about.html" class="nav-link" title="About">About</a></li><li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Services&nbsp;<b class="caret"></b></a><ul class="dropdown-menu" id="submenu2">
+                                <li><a href="/resource/Services/API_Bridge.aspx" class="dropdown-item" title="API Bridge">API Bridge</a></li><li><a href="/resource/Services/Algo_Trading.aspx" class="dropdown-item" title="Algo Trading">Algo Trading</a></li><li><a href="/resource/Services/Auto_Buy_and_Sell_Signal.aspx" class="dropdown-item" title="Auto Buy &amp; Sell Signal">Auto Buy & Sell Signal</a></li><li><a href="/resource/Services/Strategy_Development.aspx" class="dropdown-item" title="Strategy Development">Strategy Development</a></li>
+                            </ul></li><li class="nav-item"><a href="/resource/Career.aspx" class="nav-link" title="Careers">Careers</a></li><li class="nav-item"><a href="/Paynow.aspx" class="nav-link" title="Pay Now">Pay Now</a></li><li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Admin&nbsp;<b class="caret"></b></a><ul class="dropdown-menu" id="submenu3">
+                                <li><a href="/Login.aspx" class="dropdown-item" title="Login">Login</a></li><li><a href="http://mail.invicontechnology.com" class="dropdown-item" target="_blank" title="Email Login">Email Login</a></li><li><a href="https://invicontechnology.com/Timesheet.aspx" class="dropdown-item" target="_blank" title="Time Sheet">Time Sheet</a></li>
+                            </ul></li><li class="nav-item"><a href="/resource/Contact_Us.aspx" class="nav-link" title="Contact Us">Contact Us</a></li>
+                        </ul>
+                 
+                    
+    
+                </div>
+               
+            </div>
+    
+            </nav>
+            <style type="text/css" >
+            
+            .marginBottom-0 {margin-bottom:0;}
+    
+    .dropdown-submenu{position:relative;}
+    .dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+    .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+    .dropdown-submenu:hover>a:after{border-left-color:#555;}
+    .dropdown-submenu.pull-left{float:none;}
+    .dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+    .dropdown-menu[data-placement="left"] {
+        left: auto !important;
+        right: 0px !important;
+    }
+    
+    .navbar .nav>li>.dropdown-menu[data-placement="left"]:before {
+        left:auto !important;
+        right: 9px !important;
+    }
+    
+    .navbar .nav>li>.dropdown-menu[data-placement="left"]:after {
+        left: auto  !important;
+        right: 10px  !important;
+    }
+            </style>
+    
+    
+    
+    
+        <script language="javascript" type="text/javascript">
+    
+        (function($bs) {
+      const CLASS_NAME = 'has-child-dropdown-show';
+      $bs.Dropdown.prototype.toggle = function(_orginal) {
+        return function() {
+          document.querySelectorAll('.' + CLASS_NAME).forEach(function(e) {
+            e.classList.remove(CLASS_NAME);
+          });
+          let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
+          for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
+            dd.classList.add(CLASS_NAME);
+          }
+          return _orginal.call(this);
+        }
+      }($bs.Dropdown.prototype.toggle);
+    
+      document.querySelectorAll('.dropdown').forEach(function(dd) {
+        dd.addEventListener('hide.bs.dropdown', function(e) {
+          if (this.classList.contains(CLASS_NAME)) {
+            this.classList.remove(CLASS_NAME);
+            e.preventDefault();
+          }
+          e.stopPropagation(); // do not need pop in multi level mode
+        });
+      });
+    
+      // for hover
+      document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function(dd) {
+        dd.addEventListener('mouseenter', function(e) {
+          let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+          if (!toggle.classList.contains('show')) {
+            $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+            dd.classList.add(CLASS_NAME);
+            $bs.Dropdown.clearMenus();
+          }
+        });
+        dd.addEventListener('mouseleave', function(e) {
+          let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+          if (toggle.classList.contains('show')) {
+            $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+          }
+        });
+      });
+    })(bootstrap);
+    </script>
+<body>
+
+    <main>
+        <section id="introduction">
+            <p>API Bridge is a set of programming interfaces, with pincode and Places as the first programming interface currently available. API Bridge allows you to algo trade with various platforms like Amibroker, MT4, TradingView, Python, Excel, NinjaTrader, and more.</p>
+        </section>
+
+        <section id="features">
+            <h2>API Bridge Features</h2>
+            <ul>
+                <li>Integration with Amibroker, Excel, Python, MT4, and more.</li>
+                <li>Supports all major Stock Brokers</li>
+                <li>Allows trading for Multi-Strategies in Multi-Time frame and Multi-Markets in Multi-Client Account</li>
+                <li>Supports Multi-Order Types: L, M, SL-L, SL-M, BO, CO, etc.</li>
+                <li>Automatically select Multi-Strikes through your code for options trading.</li>
+                <li>Automatically select multi-expiry contracts through your code for options trading.</li>
+                <li>Trade using charts or without charts through scanner.</li>
+                <li>Doesn't require VPS, reconnects to thousands of virtual worlds interference.</li>
+                <li>Custom Target, SL, time-based signals, etc. for your code</li>
+                <li>Maintain free pattern of Long Entry, Long Exit, Short Entry, and Short Exit signals.</li>
+            </ul>
+        </section>
+
+        <section id="how-it-works">
+            <h2>Understanding How API Bridge Works</h2>
+            <p>The Bridge works on the basis of "Signals". A Signal is generally a sign (not choice) to Buy or Sell with specific conditions. The Bridge processes 4 types of Signals:</p>
+            <ol>
+                <li><strong>Long Entry (LE)</strong>: Equivalent to new Buy for making Long position.</li>
+                <li><strong>Long Exit (LX)</strong>: Equivalent to Sell for decreasing/square off Long position.</li>
+                <li><strong>Short Entry (SE)</strong>: Equivalent to new Sell for making Short position.</li>
+                <li><strong>Short Exit (SX)</strong>: Equivalent to Buy for decreasing /square off Short position.</li>
+            </ol>
+        </section>
+
+        <section id="visit-counter">
+            <p><span id="visit-count">8623</span> Times Visited</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3>About Company</h3>
+            <p>Welcome to Invicon Technology, your gateway to a new era of trading excellence. At Invicon, we embody a culture of innovation, expertise, and an unwavering passion for continuous improvement. <a href="#" id="read-more">Read More</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#query">Query</a></li>
+                <li><a href="#disclaimer">Disclaimer</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li>API Bridge</li>
+                <li>Algo Trading</li>
+                <li>Auto Buy & Sell Signal</li>
+                <li>Strategy Development</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>+91-9171718758</li>
+                <li>contact@invicontechnology.com</li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Copyright <strong>www.invicontechnology.com</strong>. All Rights Reserved</p>
+            <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Refund Policy</a> | <a href="#">Shipping Policy</a></p>
+            <p>Powered By Webtel Electrosoft Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+    <script src="api_bridge.js"></script>
+</body>
+</html>
