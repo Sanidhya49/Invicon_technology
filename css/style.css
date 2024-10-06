@@ -537,3 +537,30 @@ h6,
     color: #ffffff 
 }
 /* facts start  over */
+
+
+/* pricing grid */
+.pricing_grid01:hover{
+    transform: translateY(-10px);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+
+}
+.pricing_grid02:hover{
+    transform: translateY(-10px);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+
+}
+.pricing_grid03:hover{
+    transform: translateY(-10px);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+
+}
+.pricing_grid04:hover{
+    transform: translateY(-10px);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+
+}
