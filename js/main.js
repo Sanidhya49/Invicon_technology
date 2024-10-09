@@ -137,3 +137,22 @@ function handleMissionClick() {
 function handleVisionClick() {
     window.location.href = "about.html";
 }
+
+
+// contact us google map
+function initMap() {
+    const cityCenter = { lat: 22.7196, lng: 75.8577 }; // Coordinates for Indore
+    const map = new google.maps.Map(document.getElementById("location-map"), {
+        zoom: 12,
+        center: cityCenter,
+    });
+    const marker = new google.maps.Marker({
+        position: cityCenter,
+        map: map,
+    });
+}
+
+function handleMapError() {
+    console.error('Google Maps failed to load');
+    document.getElementById('location-map').textContent = 'Failed to load Google Maps. Please check your internet connection and try again.';
+}
