@@ -477,6 +477,11 @@ h6,
     background-size: cover;
 }
 
+.bg-header-careers {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/careers.jpg) center center no-repeat;
+    background-size: cover;
+}
+
 .link-animated a {
     transition: .5s;
 }
@@ -809,3 +814,85 @@ p {
     text-align: center;
     line-height: 1.6;
 } */
+
+
+/* careers page */
+.container_careers {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+
+
+form {
+    background: #f4f4f4;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="url"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input[type="file"] {
+    border: none;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.col {
+    flex: 1;
+    padding: 0 10px;
+    min-width: 200px;
+}
+.application_btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+#errorAlert {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    display: none;
+}
+@media (max-width: 600px) {
+    .col {
+        flex: 100%;
+    }
+}

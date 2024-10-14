@@ -156,3 +156,52 @@ function handleMapError() {
     console.error('Google Maps failed to load');
     document.getElementById('location-map').textContent = 'Failed to load Google Maps. Please check your internet connection and try again.';
 }
+
+//  careers form js
+document.addEventListener('DOMContentLoaded', function() {
+    // Populate years and months dropdowns
+    var yearSelect = document.getElementById('experienceYears');
+    var monthSelect = document.getElementById('experienceMonths');
+
+    for (var i = 0; i <= 30; i++) {
+        var option = document.createElement('option');
+        option.value = i;
+        option.textContent = i + (i === 1 ? ' Year' : ' Years');
+        yearSelect.appendChild(option);
+    }
+
+    for (var i = 0; i <= 11; i++) {
+        var option = document.createElement('option');
+        option.value = i;
+        option.textContent = i + (i === 1 ? ' Month' : ' Months');
+        monthSelect.appendChild(option);
+    }
+
+    // Form validation
+    var form = document.getElementById('applicationForm');
+    var errorAlert = document.getElementById('errorAlert');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var errors = [];
+
+        // Basic validation
+        if (!form.firstName.value) errors.push('First name is required');
+        if (!form.lastName.value) errors.push('Last name is required');
+        if (!form.email.value) errors.push('Email is required');
+        if (!form.mobile.value) errors.push('Mobile number is required');
+        if (!form.gender.value) errors.push('Gender is required');
+        if (!form.dateOfBirth.value) errors.push('Date of birth is required');
+        if (!form.resume.value) errors.push('Resume is required');
+
+        if (errors.length > 0) {
+            errorAlert.innerHTML = 'Please correct the following errors:<br>' + errors.join('<br>');
+            errorAlert.style.display = 'block';
+        } else {
+            errorAlert.style.display = 'none';
+            console.log('Form submitted successfully');
+            // Here you would typically send the form data to a server
+            alert('Form submitted successfully!');
+        }
+    });
+});
