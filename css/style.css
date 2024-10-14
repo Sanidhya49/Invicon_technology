@@ -732,6 +732,12 @@ h6,
         height: 300px;
     }
 
+    @media (max-width: 576px) {
+        .position-relative {
+            max-height: 200px;
+        }
+    }
+    
     .card {
         margin-top: 20px;
     }
