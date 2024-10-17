@@ -1,278 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Bridge - Invicon Technology</title>
-    <link rel="stylesheet" href="api_bridge.css">
+    <meta charset="utf-8">
+    <title>Invicon Technology | About</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Investment" name="keywords">
+    <meta content="Trading" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<script language="JavaScript" type="text/javascript">
-
-    function curTime()
-    {
-    var now=new Date()
-    var hrs=now.getHours()
-    var min=now.getMinutes()
-    var sec=now.getSeconds()
-    var don="AM"
-    if (hrs>=12){ don="PM" }
-    if (hrs>12) { hrs-=12 }
-    if (hrs==0) { hrs=12 }
-    if (hrs<10) { hrs="0"+hrs }
-    if (min<10) { min="0"+min }
-    if (sec<10) { sec="0"+sec }
-    if(navigator.appName.indexOf("Microsoft Internet Explorer") != -1)
-    {
-        clock.innerHTML=hrs+":"+min+":"+sec+" "+don
-    }
-    else
-    {
-        document.getElementById("clock").textContent=hrs+":"+min+":"+sec+" "+don
-    }
-    setTimeout("curTime()",1000)
-    
-    }
-    </script>
-     <style type="text/css">
-    .IE8Fix
-    {
-        text-align:left;
-        z-index: 100;
-    }
-    .imstyle			
-     {			
-         float:left;			
-         padding:0px;			    
-         margin:0px;			
-         border:0px;			
-     }	
-    </style>
-    
-    <table class="table-responsive" style="width:100%; height:20%; margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;padding-bottom:0px; padding-top:0px; border-spacing:0px; vertical-align:top;"  cellpadding ="0" cellspacing = "0" border="0">
-            <tr id="HeaderControl_C_ctl00_imageheader" style="width:100%; margin:0 ; ">
-                            <td colspan="3" style="width:100%; border:0;  margin:0 ;">
-                    
-                </td>
-                        </tr>
-                        
-            <tr id="HeaderControl_C_ctl00_tr_HeaderBackImage" valign="top" style="color: hotpink;">
-                            <td id="HeaderControl_C_ctl00_Header" style="width:100%; height:100%" valign="top" class="IE8Fix"><html>
-      <header id="header" class="text-center">
-        <a href="/resource/home.aspx" title="Home">
-          <img src="https://i.pinimg.com/736x/f6/0c/90/f60c90877c2dd18d2686916efe4f5a59.jpg" alt="Logo" class="img-fluid wow zoomIn">
-        </a>
-      </header>
-      <script>
-        AOS.init();
-      </script>
-    </html></td>
-                        </tr>
-                        
-          </table>
-    
-                    </div></td>
-                    <td class="rdRight">&nbsp;</td>
-                </tr>
-                <tr class="rdBottom">
-                    <td class="rdLeft">&nbsp;</td>
-                    <td class="rdCenter">&nbsp;</td>
-                    <td class="rdRight">&nbsp;</td>
-                </tr>
-            </table>
-            <input id="HeaderControl_ClientState" name="HeaderControl_ClientState" type="hidden" />
-        </div><div id="MenuControl" class="RadDock RadDock_Default col-md-9" style="height:82px;float:Right;">
-            <table class="rdTable">
-                <tr class="rdTop rdNone">
-                    <td class="rdLeft">&nbsp;</td>
-                    <td class="rdCenter"></td>
-                    <td class="rdRight">&nbsp;</td>
-                </tr>
-                <tr class="rdMiddle">
-                    <td class="rdLeft">&nbsp;</td>
-                    <td class="rdCenter"><div id="MenuControl_C" class="rdContent" style="overflow:hidden;border-style:none;">
-                        
-    
-     <nav class="navbar navbar-expand-md bg-light " style="z-index:155555555555;" >
-     <div class="container-fluid" style="z-index:1010192;">
-                        <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="z-index:1010192;">
-               
-                 
-                        <ul class="navbar-nav nav-fill" id="submenu1">
-                            <li class="nav-item"><a href="http://127.0.0.1:5501/index.html" class="nav-link" title="Home">Home</a></li><li class="nav-item"><a href="http://127.0.0.1:5501/about.html" class="nav-link" title="About">About</a></li><li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Services&nbsp;<b class="caret"></b></a><ul class="dropdown-menu" id="submenu2">
-                                <li><a href="/resource/Services/API_Bridge.aspx" class="dropdown-item" title="API Bridge">API Bridge</a></li><li><a href="/resource/Services/Algo_Trading.aspx" class="dropdown-item" title="Algo Trading">Algo Trading</a></li><li><a href="/resource/Services/Auto_Buy_and_Sell_Signal.aspx" class="dropdown-item" title="Auto Buy &amp; Sell Signal">Auto Buy & Sell Signal</a></li><li><a href="/resource/Services/Strategy_Development.aspx" class="dropdown-item" title="Strategy Development">Strategy Development</a></li>
-                            </ul></li><li class="nav-item"><a href="/resource/Career.aspx" class="nav-link" title="Careers">Careers</a></li><li class="nav-item"><a href="/Paynow.aspx" class="nav-link" title="Pay Now">Pay Now</a></li><li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Admin&nbsp;<b class="caret"></b></a><ul class="dropdown-menu" id="submenu3">
-                                <li><a href="/Login.aspx" class="dropdown-item" title="Login">Login</a></li><li><a href="http://mail.invicontechnology.com" class="dropdown-item" target="_blank" title="Email Login">Email Login</a></li><li><a href="https://invicontechnology.com/Timesheet.aspx" class="dropdown-item" target="_blank" title="Time Sheet">Time Sheet</a></li>
-                            </ul></li><li class="nav-item"><a href="/resource/Contact_Us.aspx" class="nav-link" title="Contact Us">Contact Us</a></li>
-                        </ul>
-                 
-                    
-    
-                </div>
-               
-            </div>
-    
-            </nav>
-            <style type="text/css" >
-            
-            .marginBottom-0 {margin-bottom:0;}
-    
-    .dropdown-submenu{position:relative;}
-    .dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
-    .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
-    .dropdown-submenu:hover>a:after{border-left-color:#555;}
-    .dropdown-submenu.pull-left{float:none;}
-    .dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
-    .dropdown-menu[data-placement="left"] {
-        left: auto !important;
-        right: 0px !important;
-    }
-    
-    .navbar .nav>li>.dropdown-menu[data-placement="left"]:before {
-        left:auto !important;
-        right: 9px !important;
-    }
-    
-    .navbar .nav>li>.dropdown-menu[data-placement="left"]:after {
-        left: auto  !important;
-        right: 10px  !important;
-    }
-            </style>
-    
-    
-    
-    
-        <script language="javascript" type="text/javascript">
-    
-        (function($bs) {
-      const CLASS_NAME = 'has-child-dropdown-show';
-      $bs.Dropdown.prototype.toggle = function(_orginal) {
-        return function() {
-          document.querySelectorAll('.' + CLASS_NAME).forEach(function(e) {
-            e.classList.remove(CLASS_NAME);
-          });
-          let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
-          for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
-            dd.classList.add(CLASS_NAME);
-          }
-          return _orginal.call(this);
-        }
-      }($bs.Dropdown.prototype.toggle);
-    
-      document.querySelectorAll('.dropdown').forEach(function(dd) {
-        dd.addEventListener('hide.bs.dropdown', function(e) {
-          if (this.classList.contains(CLASS_NAME)) {
-            this.classList.remove(CLASS_NAME);
-            e.preventDefault();
-          }
-          e.stopPropagation(); // do not need pop in multi level mode
-        });
-      });
-    
-      // for hover
-      document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function(dd) {
-        dd.addEventListener('mouseenter', function(e) {
-          let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
-          if (!toggle.classList.contains('show')) {
-            $bs.Dropdown.getOrCreateInstance(toggle).toggle();
-            dd.classList.add(CLASS_NAME);
-            $bs.Dropdown.clearMenus();
-          }
-        });
-        dd.addEventListener('mouseleave', function(e) {
-          let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
-          if (toggle.classList.contains('show')) {
-            $bs.Dropdown.getOrCreateInstance(toggle).toggle();
-          }
-        });
-      });
-    })(bootstrap);
-    </script>
 <body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
 
-    <main>
-        <section id="introduction">
-            <p>API Bridge is a set of programming interfaces, with pincode and Places as the first programming interface currently available. API Bridge allows you to algo trade with various platforms like Amibroker, MT4, TradingView, Python, Excel, NinjaTrader, and more.</p>
-        </section>
 
-        <section id="features">
-            <h2>API Bridge Features</h2>
-            <ul>
-                <li>Integration with Amibroker, Excel, Python, MT4, and more.</li>
-                <li>Supports all major Stock Brokers</li>
-                <li>Allows trading for Multi-Strategies in Multi-Time frame and Multi-Markets in Multi-Client Account</li>
-                <li>Supports Multi-Order Types: L, M, SL-L, SL-M, BO, CO, etc.</li>
-                <li>Automatically select Multi-Strikes through your code for options trading.</li>
-                <li>Automatically select multi-expiry contracts through your code for options trading.</li>
-                <li>Trade using charts or without charts through scanner.</li>
-                <li>Doesn't require VPS, reconnects to thousands of virtual worlds interference.</li>
-                <li>Custom Target, SL, time-based signals, etc. for your code</li>
-                <li>Maintain free pattern of Long Entry, Long Exit, Short Entry, and Short Exit signals.</li>
-            </ul>
-        </section>
-
-        <section id="how-it-works">
-            <h2>Understanding How API Bridge Works</h2>
-            <p>The Bridge works on the basis of "Signals". A Signal is generally a sign (not choice) to Buy or Sell with specific conditions. The Bridge processes 4 types of Signals:</p>
-            <ol>
-                <li><strong>Long Entry (LE)</strong>: Equivalent to new Buy for making Long position.</li>
-                <li><strong>Long Exit (LX)</strong>: Equivalent to Sell for decreasing/square off Long position.</li>
-                <li><strong>Short Entry (SE)</strong>: Equivalent to new Sell for making Short position.</li>
-                <li><strong>Short Exit (SX)</strong>: Equivalent to Buy for decreasing /square off Short position.</li>
-            </ol>
-        </section>
-
-        <section id="visit-counter">
-            <p><span id="visit-count">8623</span> Times Visited</p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-section">
-            <h3>About Company</h3>
-            <p>Welcome to Invicon Technology, your gateway to a new era of trading excellence. At Invicon, we embody a culture of innovation, expertise, and an unwavering passion for continuous improvement. <a href="#" id="read-more">Read More</a></p>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91-9171718758</small>
+                    <small class="me-3 text-light"><i class="fa fa-solid fa-envelope"></i>  contact@invicontechnology.com</small>
+                    <small class="me-3 text-light"><i class="fa fa-solid fa-clock"></i> Mon-sat: 10:00AM - 6:00PM</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a> -->
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- Topbar End -->
 
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#query">Query</a></li>
-                <li><a href="#disclaimer">Disclaimer</a></li>
-            </ul>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <!-- <img src="img/invicontechnology_logo" alt="Image"> -->
+                <h1 class="m-0" alt="Image">Invicon Technology</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="service.html" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="api_bridge.html" class="dropdown-item">API Bridge</a>
+                            <a href="algo_trading.html" class="dropdown-item">Algo Trading</a>
+                            <a href="auto_buysell_signal.html" class="dropdown-item">Auto Buy &Sell Signal</a>
+                            <a href="strategy_development.html" class="dropdown-item">Srategy Development</a>
+                        </div>    
+                    </div>
+                    <!-- <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                        </div>
+                    </div> -->
+                    <a href="careers.html" class="nav-item nav-link">Careers</a>
+                    <a href="pay_now.html" class="nav-item nav-link">Pay Now</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Admin</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="login.html" class="dropdown-item">Login</a>
+                            <a href="email_login.html" class="dropdown-item">Email Login</a>
+                            <a href="time_sheet.html" class="dropdown-item">Time Sheet</a>
+                            <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="quote.html" class="dropdown-item">Free Quote</a> -->
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <!-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">API Bridge</h1>
+                    <a href="index.html" class="h5 text-white">Home</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="api_bridge.html" class="h5 text-white">API Bridge</a>
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- Navbar End -->
 
-        <div class="footer-section">
-            <h3>Services</h3>
-            <ul>
-                <li>API Bridge</li>
-                <li>Algo Trading</li>
-                <li>Auto Buy & Sell Signal</li>
-                <li>Strategy Development</li>
-            </ul>
+
+    <!-- Full Screen Search Start -->
+    <!-- <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div> -->
+    <!-- Full Screen Search End -->
 
-        <div class="footer-section">
-            <h3>Contact Us</h3>
-            <ul>
-                <li>+91-9171718758</li>
-                <li>contact@invicontechnology.com</li>
-            </ul>
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <!-- <div class="row g-5"> -->
+                <!-- <div class="col-lg-7"> -->
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h3 class="fw-bold text-primary text-uppercase">API Bridge</h3>
+                        <h1 class="mb-0">Invicon: Your Partner in Trading Innovation.</h1>
+                    </div>
+                    <p><h3>Key Features</h3></p>
+                    <p><h4>🔗 Universal Compatibility</h4></p>
+                    <ul>
+                        <li>Connect seamlessly with Amibroker, Excel, Python, MT4, and more</li>
+                        <li>Support for all major Stock Brokers</li>
+                    </ul>
+                   
+                    <h4>📊 Multi-Dimensional Trading</h4>
+                    <ul>
+                        <li>Execute multi-strategies across various timeframes and markets
+                        </li>
+                        <li>Manage multiple client accounts with ease</li>
+                    </ul>
+                    <h4>🔢 Versatile Order Types</h4>
+                    <ul>
+                        <li>Place Limit, Market, Stop Loss-Limit, Stop Loss-Market, Bracket Orders, and Cover Orders</li>
+                    </ul>
+                    <h4>🎯 Advanced Options Trading</h4>
+                    <ul>
+                        <li>Automatically select multi-strikes and multi-expiry contracts through your code</li>
+                    </ul>
+                    <h4>📈 Flexible Execution</h4>
+                    <ul>
+                        <li>Trade using charts or via scanner for chart-free operations </li>
+                    </ul>
+                    <h4>🔄 Reliable Connectivity
+
+                    </h4>
+                    <ul>
+                        <li>No VPS required
+                        </li>
+                        <li>Automatic reconnection to thousands of virtual worlds
+                        </li>
+                    </ul>
+                    <h4>⚙️ Customizable Parameters
+                    </h4>
+                    <ul>
+                        <li>Set custom Targets, Stop Losses, and time-based signals in your code
+                        </li>
+                    </ul>
+                    <h4>🔄 Intuitive Signal System</h4>
+                    <ul>
+                        <li>Maintain a clear pattern of Long Entry, Long Exit, Short Entry, and Short Exit signals
+                        </li>
+                    </ul>
+
+                    <h3>How API Bridge Works: The Power of Signals</h3>
+                    <p>How API Bridge Works: The Power of Signals</p>
+                    <ul>Long Entry (LE) 📈
+
+
+                        <li>Continuous refinement of our algorithms</li>
+                        <li>Ongoing optimization of trading strategies</li>
+                        <li>Staying at the cutting edge of technological advancements</li>
+                    </ul>
+                    <p>Our dedication to improvement ensures that we consistently deliver superior results for our clients.</p> <br>
+                    <h3>Partnership: The Key to Mutual Success</h3>
+                    <p>We understand that true success in trading extends beyond algorithms. It requires a trusted partner who:</p>
+                    <ul>
+                        <li>Shares your vision and goals</li>
+                        <li>Provides personalized support and guidance</li>
+                        <li>Tailors solutions to your specific needs</li>
+                    </ul>
+                    <p>At Invicon, we pride ourselves on building enduring relationships with our clients, becoming an integral part of their success story.</p> <br>
+                    <h3>Your Gateway to Trading Excellence</h3>
+                    <p>Whether you're an institutional investor seeking to optimize your portfolio, a hedge fund manager looking to gain a competitive edge, or an individual trader aiming to maximize returns, Invicon Technology is your ideal partner.</p>
+                    <p>Join us in redefining the future of algorithmic trading. Together, we'll unlock new horizons of opportunity and success in the financial markets.</p><br>
+                    <h5>WHAT WE DO !!!</h5>
+                    <ul>
+                        <li>Making trading smart and easy</li>
+                        <li>Using AI function trading getting easier and automated work on simply your first and last stop for Algo trades</li>
+                    </ul>
+                    <h5>GOALS</h5>
+                    <ul>
+                        <li>To make new world of trading</li>
+                        <li>Creating unlimited possibilities for trading in all segments.</li>
+                        <li>AI generation</li>
+                    </ul>
+                            
+
+
+                    
+                    <!-- <div class="row g-0 mb-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
+                        </div>
+                    </div> -->
+                    <!-- <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                        </div>
+                    </div> -->
+                    <!-- <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a> -->
+                <!-- </div> -->
+            <!-- </div> -->
         </div>
+    </div>
+    <!-- About End -->
 
-        <div class="copyright">
-            <p>&copy; Copyright <strong>www.invicontechnology.com</strong>. All Rights Reserved</p>
-            <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Refund Policy</a> | <a href="#">Shipping Policy</a></p>
-            <p>Powered By Webtel Electrosoft Pvt. Ltd.</p>
+
+    <!-- Team Start -->
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
+                <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Full Name</h4>
+                            <p class="text-uppercase m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Full Name</h4>
+                            <p class="text-uppercase m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Full Name</h4>
+                            <p class="text-uppercase m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div> -->
+    <!-- Team End -->
 
-    <script src="api_bridge.js"></script>
+
+    <!-- Vendor Start -->
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                    <img src="img/vendor-4.jpg" alt="">
+                    <img src="img/vendor-5.jpg" alt="">
+                    <img src="img/vendor-6.jpg" alt="">
+                    <img src="img/vendor-7.jpg" alt="">
+                    <img src="img/vendor-8.jpg" alt="">
+                    <img src="img/vendor-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Vendor End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <div class="m-0 text-white"><h1><i class="fa fa-building" aria-hidden="true"></i></h1></div>
+                            <h1 class="about_com m-0 text-white">About Company</h1>
+                        </a>
+                        <p class="mt-3 mb-4">Welcome to Invicon Technology, your gateway to a revolutionary era of trading excellence. At Invicon, we forge a dynamic ecosystem where cutting-edge innovation meets unparalleled expertise. Our culture thrives on pushing boundaries, embracing challenges, and an relentless pursuit of perfection. We don't just adapt to the future of trading; we shape it. Join us in redefining what's possible in the world of financial
+                            <a class="read_more_btn" href="about.html">read more..</a>
+                        </p>
+                        <!-- <a class="read_more_btn" href="about.html">Read More..<i class="bi bi-arrow-right"></i></a> -->
+                        <!-- <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Sign Up</button>
+                            </div>
+                        </form> -->
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <!-- <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">123 Street, New York, USA</p>
+                            </div> -->
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">
+                                    contact@invicontechnology.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">
+                                    +91-9171718758</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Query</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Disclaimer</a>
+                                <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Services</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="api_bridge.html"><i class="bi bi-arrow-right text-primary me-2"></i>API Bridge</a>
+                                <a class="text-light mb-2" href="algo_trading.html"><i class="bi bi-arrow-right text-primary me-2"></i>Algo Trading</a>
+                                <a class="text-light mb-2" href="auto_buysell_signal.html"><i class="bi bi-arrow-right text-primary me-2"></i>Auto Buy & Sell Signal</a>
+                                <a class="text-light mb-2" href="strategy_development.html"><i class="bi bi-arrow-right text-primary me-2"></i>Strategy Development</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Invicon Technology</a>. All Rights Reserved. 
+						
+						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+						<!-- Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
